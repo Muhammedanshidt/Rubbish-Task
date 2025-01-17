@@ -12,7 +12,7 @@ function DetailedRubbish() {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await axios.get("/services");
+        const response = await axios.get("https://rubbish-task-server.onrender.com/api/services");
         const filteredData = response.data.filter((ele) => ele.category === type);
         setData(filteredData);
       } catch (error) {

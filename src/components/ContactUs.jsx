@@ -15,7 +15,7 @@ function ContactUsModal({ custom, name }) {
   
     try {
       console.log("Before axios.post");
-      const response = await axios.post("/contact", data);
+      const response = await axios.post("https://rubbish-task-server.onrender.com/api/contact", data);
       console.log("Axios response:", response);
   
       if (response.status === 200) {
