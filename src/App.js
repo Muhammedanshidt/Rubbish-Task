@@ -5,11 +5,8 @@ import DetailedRubbish from './components/DetailedRubbish';
 import axios from 'axios';
 
 
-
-
-
 function App() {
-  axios.defaults.baseURL = 'https://rubbish-task-server.vercel.app/';
+  axios.defaults.baseURL = 'https://rubbish-task-server.onrender.com/';
   return (
     <div>
       <Routes>
