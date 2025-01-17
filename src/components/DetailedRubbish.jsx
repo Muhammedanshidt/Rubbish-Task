@@ -49,7 +49,7 @@ function DetailedRubbish() {
                     <p>{ele.label}</p>
                     =
                     <p>{ele.price}</p>
-                  </div>
+                  </div>  
                 </div>
 
               )

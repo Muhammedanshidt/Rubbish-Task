@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 function App() {
-  axios.defaults.baseURL = 'https://rubbish-task-server.onrender.com/api/';
+  axios.defaults.baseURL = 'https://rubbish-task-server.onrender.com/api';
   return (
     <div>
       <Routes>
