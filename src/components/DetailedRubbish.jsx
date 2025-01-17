@@ -1,8 +1,9 @@
-import axios from 'axios';
+
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import ContactUs from './ContactUs';
 import WhatsAppButton from './Whatsapp';
+import { Axios } from '../App';
 
 function DetailedRubbish() {
   const location = useLocation();
@@ -12,7 +13,7 @@ function DetailedRubbish() {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await axios.get("https://rubbish-task-server.onrender.com/api/services");
+        const response = await Axios.get("services");
         const filteredData = response.data.filter((ele) => ele.category === type);
         setData(filteredData);
       } catch (error) {

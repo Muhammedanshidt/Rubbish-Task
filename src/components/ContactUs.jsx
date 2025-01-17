@@ -1,6 +1,6 @@
-import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { Axios } from '../App';
 
 function ContactUsModal({ custom, name }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ function ContactUsModal({ custom, name }) {
   
     try {
       console.log("Before axios.post");
-      const response = await axios.post("https://rubbish-task-server.onrender.com/api/contact", data);
+      const response = await Axios.post("contact", data);
       console.log("Axios response:", response);
   
       if (response.status === 200) {
