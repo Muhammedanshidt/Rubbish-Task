@@ -9,7 +9,7 @@ import axios from 'axios';
 
 
 function App() {
-  axios.defaults.baseURL = 'http://localhost:3003/api/';
+  axios.defaults.baseURL = 'https://rubbish-task-server.vercel.app/';
   return (
     <div>
       <Routes>
